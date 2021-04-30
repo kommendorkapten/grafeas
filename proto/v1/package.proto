@@ -16,7 +16,7 @@ syntax = "proto3";
 
 package grafeas.v1;
 
-option go_package = "github.com/grafeas/grafeas/proto/v1/grafeas_go_proto";
+option go_package = "github.com/kommendorkapten/grafeas/proto/v1/grafeas_go_proto";
 option java_multiple_files = true;
 option java_package = "io.grafeas.v1";
 option objc_class_prefix = "GRA";
@@ -107,7 +107,7 @@ message Version {
   // fields that specify start version and end versions. At times this is
   // insufficient - we also need to specify whether the version is included in
   // the range or is excluded from the range. This boolean is expected to be set
-  // to true when the version is included in a range. 
+  // to true when the version is included in a range.
   bool inclusive = 6;
 
   // Whether this is an ordinary package version or a sentinel MIN/MAX version.

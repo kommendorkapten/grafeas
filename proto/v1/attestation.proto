@@ -16,7 +16,7 @@ syntax = "proto3";
 
 package grafeas.v1;
 
-option go_package = "github.com/grafeas/grafeas/proto/v1/grafeas_go_proto";
+option go_package = "github.com/kommendorkapten/grafeas/proto/v1/grafeas_go_proto";
 option java_multiple_files = true;
 option java_package = "io.grafeas.v1";
 option objc_class_prefix = "GRA";
@@ -77,8 +77,8 @@ message AttestationOccurrence {
   // for more details on signature structure and verification.
   repeated Signature signatures = 2;
   // One or more JWTs encoding a self-contained attestation.
-  // Each JWT encodes the payload that it verifies within the JWT itself. 
-  // Verifier implementation SHOULD ignore the `serialized_payload` field 
+  // Each JWT encodes the payload that it verifies within the JWT itself.
+  // Verifier implementation SHOULD ignore the `serialized_payload` field
   // when verifying these JWTs.
   // If only JWTs are present on this AttestationOccurrence, then the
   // `serialized_payload` SHOULD be left empty.

@@ -16,6 +16,6 @@
 //go:generate protoc ../../proto/v1/vulnerability.proto
 //go:generate protoc ../../proto/v1/upgrade.proto
 //go:generate mv grafeas_go_proto tmp
-//go:generate mv tmp/github.com/grafeas/grafeas/proto/v1/grafeas_go_proto .
+//go:generate mv tmp/github.com/kommendorkapten/grafeas/proto/v1/grafeas_go_proto .
 //go:generate rm -rf tmp
 package v1

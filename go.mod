@@ -1,4 +1,4 @@
-module github.com/grafeas/grafeas
+module github.com/kommendorkapten/grafeas
 
 go 1.14
 
